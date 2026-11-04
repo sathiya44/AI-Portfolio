@@ -102,9 +102,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal, onOpenChat }) => 
                 </div>
 
                 {/* Candidate Name */}
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white tracking-tight">
+                <h2 className="text-xl font-bold text-slate-900 dark:text-white tracking-tight">
                   Sathiya Sankar
-                </h3>
+                </h2>
 
                 {/* Role Tag in Uppercase Blue */}
                 <p className="text-[11px] font-mono font-bold tracking-widest text-blue-600 dark:text-blue-400 uppercase mt-1">
@@ -112,7 +112,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal, onOpenChat }) => 
                 </p>
 
                 {/* Domain breadcrumb line */}
-                <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 font-medium">
+                <p className="text-xs text-slate-600 dark:text-slate-400 mt-1 font-medium">
                   Full-Stack • Web • AI / RAG
                 </p>
 
@@ -160,7 +160,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal, onOpenChat }) => 
             <div className="text-4xl sm:text-5xl font-black text-slate-900 dark:text-white font-sans tracking-tight">
               4<span className="text-blue-600 dark:text-blue-400 font-bold">+</span>
             </div>
-            <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium">
+            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 font-medium">
               Years of Experience
             </p>
           </div>
@@ -169,7 +169,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal, onOpenChat }) => 
             <div className="text-4xl sm:text-5xl font-black text-slate-900 dark:text-white font-sans tracking-tight">
               10<span className="text-blue-600 dark:text-blue-400 font-bold">+</span>
             </div>
-            <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium">
+            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 font-medium">
               Production Web Apps
             </p>
           </div>
@@ -178,7 +178,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal, onOpenChat }) => 
             <div className="text-4xl sm:text-5xl font-black text-slate-900 dark:text-white font-sans tracking-tight">
               5<span className="text-blue-600 dark:text-blue-400 font-bold">+</span>
             </div>
-            <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium">
+            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 font-medium">
               Multi-Tenant SaaS Tools
             </p>
           </div>
@@ -187,7 +187,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal, onOpenChat }) => 
             <div className="text-4xl sm:text-5xl font-black text-slate-900 dark:text-white font-sans tracking-tight">
               &lt;200<span className="text-blue-600 dark:text-blue-400 font-bold">ms</span>
             </div>
-            <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium">
+            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 font-medium">
               pgvector RAG Retrieval
             </p>
           </div>

@@ -363,38 +363,47 @@ export const ChatAssistant: React.FC<ChatAssistantProps> = ({
 
               <form onSubmit={handleContactSubmit} className="space-y-3.5">
                 <div className="space-y-1">
-                  <label className="text-xs font-medium text-slate-700 dark:text-slate-300">
+                  <label htmlFor="chat-contact-name" className="text-xs font-medium text-slate-700 dark:text-slate-300">
                     Your Name
                   </label>
                   <input
+                    id="chat-contact-name"
+                    name="chat-contact-name"
+                    aria-label="Your Name"
                     type="text"
                     required
                     value={contactData.name}
                     onChange={(e) => setContactData({ ...contactData, name: e.target.value })}
                     placeholder="e.g. Alex Morgan"
-                    className="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-[#080c14] border border-slate-200 dark:border-slate-800 text-xs text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 transition-colors"
+                    className="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-[#080c14] border border-slate-200 dark:border-slate-800 text-xs text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:border-blue-500 transition-colors"
                   />
                 </div>
 
                 <div className="space-y-1">
-                  <label className="text-xs font-medium text-slate-700 dark:text-slate-300">
+                  <label htmlFor="chat-contact-email" className="text-xs font-medium text-slate-700 dark:text-slate-300">
                     Your Email
                   </label>
                   <input
+                    id="chat-contact-email"
+                    name="chat-contact-email"
+                    aria-label="Your Email"
                     type="email"
                     required
                     value={contactData.email}
                     onChange={(e) => setContactData({ ...contactData, email: e.target.value })}
                     placeholder="alex@company.com"
-                    className="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-[#080c14] border border-slate-200 dark:border-slate-800 text-xs text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 transition-colors"
+                    className="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-[#080c14] border border-slate-200 dark:border-slate-800 text-xs text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:border-blue-500 transition-colors"
                   />
                 </div>
 
                 <div className="space-y-1">
-                  <label className="text-xs font-medium text-slate-700 dark:text-slate-300">
+                  <label htmlFor="chat-contact-service" className="text-xs font-medium text-slate-700 dark:text-slate-300">
                     Topic / Role Scope
                   </label>
                   <select
+                    id="chat-contact-service"
+                    name="chat-contact-service"
+                    aria-label="Topic or Role Scope"
                     value={contactData.service}
                     onChange={(e) => setContactData({ ...contactData, service: e.target.value })}
                     className="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-[#080c14] border border-slate-200 dark:border-slate-800 text-xs text-slate-900 dark:text-white focus:outline-none focus:border-blue-500 transition-colors"
@@ -408,16 +417,19 @@ export const ChatAssistant: React.FC<ChatAssistantProps> = ({
                 </div>
 
                 <div className="space-y-1">
-                  <label className="text-xs font-medium text-slate-700 dark:text-slate-300">
+                  <label htmlFor="chat-contact-message" className="text-xs font-medium text-slate-700 dark:text-slate-300">
                     Your Message
                   </label>
                   <textarea
+                    id="chat-contact-message"
+                    name="chat-contact-message"
+                    aria-label="Your Message"
                     required
                     rows={4}
                     value={contactData.message}
                     onChange={(e) => setContactData({ ...contactData, message: e.target.value })}
                     placeholder="Hi Sathiya, I'd like to discuss an engineering opportunity or project regarding..."
-                    className="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-[#080c14] border border-slate-200 dark:border-slate-800 text-xs text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 transition-colors resize-none"
+                    className="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-[#080c14] border border-slate-200 dark:border-slate-800 text-xs text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:border-blue-500 transition-colors resize-none"
                   />
                 </div>
 
@@ -554,13 +566,14 @@ export const ChatAssistant: React.FC<ChatAssistantProps> = ({
                 <div className="flex items-end gap-2 border border-slate-200 dark:border-[#1a2333] bg-slate-50 dark:bg-[#080c14] p-2.5 rounded-xl focus-within:border-blue-500 dark:focus-within:border-sky-500 transition-colors">
                   <textarea
                     ref={inputRef}
+                    aria-label="Ask a question about Sathiya's engineering background"
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
                     onKeyDown={handleKeyDown}
                     placeholder="Ask about Next.js, pgvector, Herbet Agency, availability..."
                     rows={2}
                     disabled={isLoading}
-                    className="w-full resize-none bg-transparent px-1 py-0.5 text-xs text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none"
+                    className="w-full resize-none bg-transparent px-1 py-0.5 text-xs text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none"
                   />
                   <button
                     type="button"

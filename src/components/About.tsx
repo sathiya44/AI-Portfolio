@@ -82,13 +82,13 @@ export const About: React.FC = () => {
           <div className="lg:col-span-5 space-y-6">
             {/* Quick Details Card */}
             <div className="p-6 rounded-2xl bg-white dark:bg-[#0e1422] border border-slate-200/80 dark:border-slate-800 shadow-sm space-y-4">
-              <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-slate-400">
+              <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400">
                 Candidate Information
               </h3>
 
               <div className="space-y-3 text-xs sm:text-sm">
                 <div className="flex items-center justify-between py-1.5 border-b border-slate-100 dark:border-slate-800">
-                  <span className="text-slate-500 dark:text-slate-400 flex items-center gap-2">
+                  <span className="text-slate-600 dark:text-slate-400 flex items-center gap-2">
                     <Clock className="w-4 h-4 text-blue-600 dark:text-blue-400" />
                     Availability
                   </span>
@@ -96,7 +96,7 @@ export const About: React.FC = () => {
                 </div>
 
                 <div className="flex items-center justify-between py-1.5 border-b border-slate-100 dark:border-slate-800">
-                  <span className="text-slate-500 dark:text-slate-400 flex items-center gap-2">
+                  <span className="text-slate-600 dark:text-slate-400 flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-blue-600 dark:text-blue-400" />
                     Location
                   </span>
@@ -104,7 +104,7 @@ export const About: React.FC = () => {
                 </div>
 
                 <div className="flex items-center justify-between py-1.5 border-b border-slate-100 dark:border-slate-800">
-                  <span className="text-slate-500 dark:text-slate-400 flex items-center gap-2">
+                  <span className="text-slate-600 dark:text-slate-400 flex items-center gap-2">
                     <Award className="w-4 h-4 text-blue-600 dark:text-blue-400" />
                     Experience
                   </span>
@@ -112,7 +112,7 @@ export const About: React.FC = () => {
                 </div>
 
                 <div className="flex items-center justify-between py-1.5">
-                  <span className="text-slate-500 dark:text-slate-400">Preferred Roles</span>
+                  <span className="text-slate-600 dark:text-slate-400">Preferred Roles</span>
                   <span className="text-slate-900 dark:text-slate-200 text-right">Full-Stack / Next.js / Backend</span>
                 </div>
               </div>
@@ -120,7 +120,7 @@ export const About: React.FC = () => {
 
             {/* Verified Education Timeline */}
             <div className="p-6 rounded-2xl bg-white dark:bg-[#0e1422] border border-slate-200/80 dark:border-slate-800 shadow-sm space-y-5">
-              <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-slate-400 flex items-center gap-2">
+              <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400 flex items-center gap-2">
                 <GraduationCap className="w-4 h-4 text-blue-600 dark:text-blue-400" />
                 <span>Education & Degrees</span>
               </h3>
@@ -143,7 +143,7 @@ export const About: React.FC = () => {
                       <p className="text-xs text-blue-600 dark:text-blue-400 font-medium">
                         {edu.institution}
                       </p>
-                      <p className="text-[11px] font-mono text-slate-500 dark:text-slate-400">
+                      <p className="text-[11px] font-mono text-slate-600 dark:text-slate-400">
                         {edu.period}{edu.location ? ` • ${edu.location}` : ''}
                       </p>
                     </div>

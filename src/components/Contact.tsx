@@ -63,7 +63,7 @@ export const Contact: React.FC = () => {
           {/* Left Column: Direct Coordinates Cards */}
           <div className="lg:col-span-5 space-y-4">
             <div className="p-6 sm:p-8 rounded-2xl bg-white dark:bg-[#0e1422] border border-slate-200/80 dark:border-slate-800 shadow-sm space-y-6">
-              <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-slate-400">
+              <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400">
                 Direct Contact Channels
               </h3>
 
@@ -77,7 +77,7 @@ export const Contact: React.FC = () => {
                     <Mail className="w-4 h-4" />
                   </div>
                   <div>
-                    <span className="text-xs text-slate-500 dark:text-slate-400 block font-medium">E-Mail Address</span>
+                    <span className="text-xs text-slate-600 dark:text-slate-400 block font-medium">E-Mail Address</span>
                     <span className="text-xs sm:text-sm font-semibold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors break-all">
                       {profileContext.contact.email}
                     </span>
@@ -93,7 +93,7 @@ export const Contact: React.FC = () => {
                     <Phone className="w-4 h-4" />
                   </div>
                   <div>
-                    <span className="text-xs text-slate-500 dark:text-slate-400 block font-medium">Phone / WhatsApp</span>
+                    <span className="text-xs text-slate-600 dark:text-slate-400 block font-medium">Phone / WhatsApp</span>
                     <span className="text-xs sm:text-sm font-semibold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors font-mono">
                       {profileContext.contact.phone}
                     </span>
@@ -105,7 +105,7 @@ export const Contact: React.FC = () => {
                     <Clock className="w-4 h-4" />
                   </div>
                   <div>
-                    <span className="text-xs text-slate-500 dark:text-slate-400 block font-medium">Availability Status</span>
+                    <span className="text-xs text-slate-600 dark:text-slate-400 block font-medium">Availability Status</span>
                     <span className="text-xs sm:text-sm font-semibold text-blue-600 dark:text-blue-400">
                       15 Days Notice (Serving Notice Period)
                     </span>
@@ -117,7 +117,7 @@ export const Contact: React.FC = () => {
                     <MapPin className="w-4 h-4" />
                   </div>
                   <div>
-                    <span className="text-xs text-slate-500 dark:text-slate-400 block font-medium">Current Location</span>
+                    <span className="text-xs text-slate-600 dark:text-slate-400 block font-medium">Current Location</span>
                     <span className="text-xs sm:text-sm font-semibold text-slate-900 dark:text-white">
                       Vellore, Tamil Nadu, India (Open to Remote Worldwide)
                     </span>
@@ -159,7 +159,7 @@ export const Contact: React.FC = () => {
                 <h3 className="text-lg font-bold text-slate-900 dark:text-white">
                   Send a Message or Project Request
                 </h3>
-                <p className="text-xs text-slate-500 dark:text-slate-400">
+                <p className="text-xs text-slate-600 dark:text-slate-400">
                   Fill in your details below and I will respond within 24 hours.
                 </p>
               </div>
@@ -167,39 +167,46 @@ export const Contact: React.FC = () => {
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-1.5">
-                    <label className="text-xs font-medium text-slate-700 dark:text-slate-300">
+                    <label htmlFor="contact-name" className="text-xs font-medium text-slate-700 dark:text-slate-300">
                       Your Name
                     </label>
                     <input
+                      id="contact-name"
+                      name="name"
                       type="text"
                       required
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder="Jane Doe"
-                      className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 dark:bg-[#080c14] border border-slate-200 dark:border-slate-800 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 transition-colors"
+                      className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 dark:bg-[#080c14] border border-slate-200 dark:border-slate-800 text-sm text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:border-blue-500 transition-colors"
                     />
                   </div>
 
                   <div className="space-y-1.5">
-                    <label className="text-xs font-medium text-slate-700 dark:text-slate-300">
+                    <label htmlFor="contact-email" className="text-xs font-medium text-slate-700 dark:text-slate-300">
                       Your Email
                     </label>
                     <input
+                      id="contact-email"
+                      name="email"
                       type="email"
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       placeholder="jane@company.com"
-                      className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 dark:bg-[#080c14] border border-slate-200 dark:border-slate-800 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 transition-colors"
+                      className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 dark:bg-[#080c14] border border-slate-200 dark:border-slate-800 text-sm text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:border-blue-500 transition-colors"
                     />
                   </div>
                 </div>
 
                 <div className="space-y-1.5">
-                  <label className="text-xs font-medium text-slate-700 dark:text-slate-300">
+                  <label htmlFor="contact-service" className="text-xs font-medium text-slate-700 dark:text-slate-300">
                     Service / Inquiry Scope
                   </label>
                   <select
+                    id="contact-service"
+                    name="service"
+                    aria-label="Service or Inquiry Scope"
                     value={formData.service}
                     onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                     className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 dark:bg-[#080c14] border border-slate-200 dark:border-slate-800 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-blue-500 transition-colors"
@@ -213,16 +220,18 @@ export const Contact: React.FC = () => {
                 </div>
 
                 <div className="space-y-1.5">
-                  <label className="text-xs font-medium text-slate-700 dark:text-slate-300">
+                  <label htmlFor="contact-message" className="text-xs font-medium text-slate-700 dark:text-slate-300">
                     Your Message
                   </label>
                   <textarea
+                    id="contact-message"
+                    name="message"
                     required
                     rows={4}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     placeholder="Describe your project, timeline, or engineering opportunity..."
-                    className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 dark:bg-[#080c14] border border-slate-200 dark:border-slate-800 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-blue-500 transition-colors resize-none"
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 dark:bg-[#080c14] border border-slate-200 dark:border-slate-800 text-sm text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:border-blue-500 transition-colors resize-none"
                   />
                 </div>
 
@@ -244,7 +253,7 @@ export const Contact: React.FC = () => {
                   )}
                 </button>
 
-                <div className="flex items-center justify-between text-[11px] text-slate-400 dark:text-slate-500 px-1 pt-1">
+                <div className="flex items-center justify-between text-[11px] text-slate-600 dark:text-slate-400 px-1 pt-1 font-medium">
                   <span className="flex items-center gap-1">
                     <ShieldCheck className="w-3.5 h-3.5 text-blue-500" />
                     <span>Protected delivery via Resend</span>

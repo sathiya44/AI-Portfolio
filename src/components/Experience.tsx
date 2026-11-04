@@ -44,14 +44,14 @@ export const Experience: React.FC = () => {
                       {exp.role}
                       <span className="text-blue-600 dark:text-blue-400 font-normal">@ {exp.company}</span>
                     </h3>
-                    <div className="flex flex-wrap items-center gap-3 text-xs text-slate-500 dark:text-slate-400 mt-1">
+                    <div className="flex flex-wrap items-center gap-3 text-xs text-slate-600 dark:text-slate-400 mt-1">
                       <span className="flex items-center gap-1 font-mono text-blue-600 dark:text-blue-400 font-medium">
                         <Calendar className="w-3.5 h-3.5" />
                         {exp.period}
                       </span>
                       <span>•</span>
                       <span className="flex items-center gap-1">
-                        <MapPin className="w-3.5 h-3.5 text-slate-400" />
+                        <MapPin className="w-3.5 h-3.5 text-slate-500 dark:text-slate-400" />
                         {exp.location} ({exp.type})
                       </span>
                     </div>
@@ -69,7 +69,7 @@ export const Experience: React.FC = () => {
 
                 {/* Measurable Achievements */}
                 <div className="space-y-2.5">
-                  <h4 className="text-xs font-mono font-bold uppercase tracking-wider text-slate-400">
+                  <h4 className="text-xs font-mono font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400">
                     Key Quantified Contributions
                   </h4>
                   <ul className="grid grid-cols-1 gap-2 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
@@ -84,7 +84,7 @@ export const Experience: React.FC = () => {
 
                 {/* Technologies Stack Tags */}
                 <div className="pt-2 flex flex-wrap items-center gap-1.5">
-                  <span className="text-xs font-mono text-slate-400 mr-2">Technologies:</span>
+                  <span className="text-xs font-mono text-slate-600 dark:text-slate-400 mr-2">Technologies:</span>
                   {exp.skills.map((skill, sIdx) => (
                     <span
                       key={sIdx}

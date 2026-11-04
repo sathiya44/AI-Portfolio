@@ -79,7 +79,7 @@ export const Projects: React.FC<ProjectsProps> = ({ onOpenChat }) => {
                   <h3 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                     {project.title}
                   </h3>
-                  <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1.5 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-1.5 leading-relaxed">
                     {project.tagline}
                   </p>
                 </div>
@@ -111,7 +111,7 @@ export const Projects: React.FC<ProjectsProps> = ({ onOpenChat }) => {
 
                 {/* Measurable Performance Highlights */}
                 <div className="space-y-2">
-                  <div className="text-xs font-mono font-semibold uppercase text-slate-500 dark:text-slate-400">
+                  <div className="text-xs font-mono font-semibold uppercase text-slate-600 dark:text-slate-400">
                     Key Performance Highlights
                   </div>
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700 dark:text-slate-300">

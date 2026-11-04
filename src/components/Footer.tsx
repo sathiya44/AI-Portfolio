@@ -9,7 +9,7 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="border-t border-slate-200/80 dark:border-slate-800 bg-slate-50 dark:bg-[#060910] py-12 px-4 sm:px-6 lg:px-8 text-xs text-slate-500 dark:text-slate-400">
+    <footer className="border-t border-slate-200/80 dark:border-slate-800 bg-slate-50 dark:bg-[#060910] py-12 px-4 sm:px-6 lg:px-8 text-xs text-slate-600 dark:text-slate-400">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Brand & Summary */}
         <div className="space-y-1 text-center md:text-left">
@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
             <span className="text-slate-400 dark:text-slate-600">|</span>
             <span className="text-slate-600 dark:text-slate-400 font-mono text-[11px]">Full-Stack & AI Engineer</span>
           </div>
-          <p className="text-slate-500 max-w-sm">
+          <p className="text-slate-600 dark:text-slate-400 max-w-sm">
             Architecting production Next.js web applications, multi-tenant SaaS platforms, and pgvector RAG workflows.
           </p>
         </div>
@@ -51,7 +51,7 @@ export const Footer: React.FC = () => {
               target="_blank"
               rel="noreferrer"
               onClick={() => trackEvent('contact_action', { method: 'github' })}
-              className="p-1.5 rounded-lg text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white hover:bg-slate-200/60 dark:hover:bg-slate-800 transition-colors"
+              className="p-1.5 rounded-lg text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white hover:bg-slate-200/60 dark:hover:bg-slate-800 transition-colors"
               title="GitHub"
             >
               <Github className="w-4 h-4" />
@@ -61,7 +61,7 @@ export const Footer: React.FC = () => {
               target="_blank"
               rel="noreferrer"
               onClick={() => trackEvent('contact_action', { method: 'linkedin' })}
-              className="p-1.5 rounded-lg text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white hover:bg-slate-200/60 dark:hover:bg-slate-800 transition-colors"
+              className="p-1.5 rounded-lg text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white hover:bg-slate-200/60 dark:hover:bg-slate-800 transition-colors"
               title="LinkedIn"
             >
               <Linkedin className="w-4 h-4" />
@@ -69,7 +69,7 @@ export const Footer: React.FC = () => {
             <a
               href={`mailto:${profileContext.contact.email}`}
               onClick={() => trackEvent('contact_action', { method: 'email_click' })}
-              className="p-1.5 rounded-lg text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white hover:bg-slate-200/60 dark:hover:bg-slate-800 transition-colors"
+              className="p-1.5 rounded-lg text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white hover:bg-slate-200/60 dark:hover:bg-slate-800 transition-colors"
               title="Email"
             >
               <Mail className="w-4 h-4" />
@@ -87,7 +87,7 @@ export const Footer: React.FC = () => {
         </button>
       </div>
 
-      <div className="max-w-6xl mx-auto pt-8 mt-8 border-t border-slate-200/80 dark:border-slate-800/80 text-center text-slate-400 text-[11px]">
+      <div className="max-w-6xl mx-auto pt-8 mt-8 border-t border-slate-200/80 dark:border-slate-800/80 text-center text-slate-600 dark:text-slate-400 text-[11px]">
         © {new Date().getFullYear()} Sathiya Sankar. Built with React, TypeScript & Tailwind CSS.
       </div>
     </footer>
