@@ -11,7 +11,6 @@ import { FAQ } from './components/FAQ';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { initAnalytics, trackEvent } from './lib/analytics';
-
 // Code-split heavy interactive overlays for maximum initial render performance
 const ChatAssistant = lazy(() =>
   import('./components/ChatAssistant').then((m) => ({ default: m.ChatAssistant }))
