@@ -1,0 +1,222 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Prevent auto-zoom on iOS Safari when tapping form inputs on mobile */
+  @media screen and (max-width: 767px) {
+    input, select, textarea {
+      font-size: 16px !important;
+    }
+  }
+
+  /* Custom Clean Scrollbar */
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+  }
+
+  .dark ::-webkit-scrollbar-thumb {
+    background: #334155;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+  }
+}
+
+/* ========================================================
+   NATURAL LANYARD PENDULUM SWING WITH SMOOTH HOVER PAUSE
+   ======================================================== */
+@keyframes lanyardPendulum {
+  0% {
+    transform: rotate(-3.3deg) translateX(-5.7px);
+  }
+  50% {
+    transform: rotate(3.3deg) translateX(5.7px);
+  }
+  100% {
+    transform: rotate(-3.3deg) translateX(-5.7px);
+  }
+}
+
+.lanyard-swing {
+  transform-origin: top center;
+  animation: lanyardPendulum 3.2s ease-in-out infinite;
+  will-change: transform;
+}
+
+.lanyard-swing:hover {
+  animation-play-state: paused;
+}
+
+/* ========================================================
+   NATURAL, HIGH-PERFORMANCE THEME TRANSITIONS
+   View Transitions API with circular clip-path expansion
+   ======================================================== */
+
+/* Eliminate Chromium's default plus-lighter blend flash between dark and light */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+/* Old screen bitmap sits stationary underneath */
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+/* Incoming screen cleanly expands over the old screen via hardware-accelerated clipPath */
+::view-transition-new(root) {
+  z-index: 9999;
+}
+
+/* Graceful fallback for browsers without View Transitions (scoped, smooth, zero jank) */
+html.theme-transition body,
+html.theme-transition nav,
+html.theme-transition main,
+html.theme-transition footer,
+html.theme-transition section,
+html.theme-transition .bg-white,
+html.theme-transition .dark\:bg-\[\#0b0f19\],
+html.theme-transition .dark\:bg-\[\#0e1422\],
+html.theme-transition .dark\:bg-\[\#141c2e\] {
+  transition: background-color 300ms cubic-bezier(0.25, 1, 0.5, 1),
+              border-color 300ms cubic-bezier(0.25, 1, 0.5, 1),
+              color 300ms cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@layer utilities {
+  .bg-radial-rings {
+    position: relative;
+    z-index: 1;
+  }
+
+  .bg-radial-rings::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    background-image: radial-gradient(circle at 18% 28%, rgba(37, 99, 235, 0.05) 0%, transparent 45%),
+                      radial-gradient(circle at 18% 28%, transparent 40px, rgba(37, 99, 235, 0.035) 41px, transparent 42px),
+                      radial-gradient(circle at 18% 28%, transparent 100px, rgba(37, 99, 235, 0.03) 101px, transparent 102px),
+                      radial-gradient(circle at 18% 28%, transparent 180px, rgba(37, 99, 235, 0.025) 181px, transparent 182px),
+                      radial-gradient(circle at 18% 28%, transparent 280px, rgba(37, 99, 235, 0.02) 281px, transparent 282px);
+    transition: opacity 400ms ease;
+    opacity: 1;
+  }
+
+  .dark .bg-radial-rings::before {
+    background-image: radial-gradient(circle at 18% 28%, rgba(59, 130, 246, 0.09) 0%, transparent 45%),
+                      radial-gradient(circle at 18% 28%, transparent 40px, rgba(59, 130, 246, 0.05) 41px, transparent 42px),
+                      radial-gradient(circle at 18% 28%, transparent 100px, rgba(59, 130, 246, 0.04) 101px, transparent 102px),
+                      radial-gradient(circle at 18% 28%, transparent 180px, rgba(59, 130, 246, 0.03) 181px, transparent 182px);
+    opacity: 0.9;
+  }
+}
+
+/* ========================================================
+   ATS RESUME PRINT STYLESHEET
+   Flawless, clean ATS export via window.print().
+   Suppresses all webpage navigation, hero, sections, footer,
+   and floating chatbot so only the ATS resume is printed.
+   ======================================================== */
+@media print {
+  /* Suppress the entire portfolio webpage */
+  header,
+  nav,
+  main,
+  footer,
+  #chat-drawer,
+  #chat-assistant-container,
+  .print\:hidden,
+  .print-hidden,
+  [data-print-hide="true"] {
+    display: none !important;
+  }
+
+  /* Reset document for clean paper print */
+  html,
+  body {
+    background: #ffffff !important;
+    color: #111827 !important;
+    font-size: 10pt !important;
+    line-height: 1.4 !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Unset fixed modal wrapper so it doesn't repeat on every printed page */
+  .resume-modal-portal {
+    position: static !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  .resume-sheet-container {
+    position: static !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    transform: none !important;
+  }
+
+  /* Prevent awkward page breaks inside experience/project blocks */
+  .avoid-break {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Standard ATS Document Margins */
+  @page {
+    margin: 12mm 15mm;
+    size: letter portrait;
+  }
+}
