@@ -20,12 +20,15 @@ export const Footer: React.FC = () => {
             <span className="text-slate-600 dark:text-slate-400 font-mono text-[11px]">Full-Stack & AI Engineer</span>
           </div>
           <p className="text-slate-600 dark:text-slate-400 max-w-sm">
-            Architecting production Next.js web applications, multi-tenant SaaS platforms, and pgvector RAG workflows.
+            Architecting production Next.js web applications, multi-tenant SaaS platforms, and automatic workflows using AI agents.
           </p>
         </div>
 
         {/* Links & Socials */}
         <div className="flex flex-wrap items-center justify-center gap-6 text-xs">
+          <a href="#projects" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+            Projects
+          </a>
           <a href="#about" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
             About
           </a>
@@ -35,8 +38,8 @@ export const Footer: React.FC = () => {
           <a href="#services" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
             Services
           </a>
-          <a href="#case-studies" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-            Case Studies
+          <a href="#experience" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+            Experience
           </a>
           <a href="#faq" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
             FAQ

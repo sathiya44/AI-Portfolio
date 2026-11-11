@@ -20,6 +20,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   const [servicesOpen, setServicesOpen] = useState(false);
 
   const navLinks = [
+    { name: 'Projects', href: '#projects' },
     { name: 'About', href: '#about' },
     { name: 'Stack', href: '#stack' },
     {
@@ -29,11 +30,11 @@ export const Navbar: React.FC<NavbarProps> = ({
       subItems: [
         { name: 'Full-Stack Web (Next.js)', href: '#services' },
         { name: 'Multi-Tenant SaaS', href: '#services' },
-        { name: 'Production AI & RAG', href: '#services' },
+        { name: 'AI & Workflows', href: '#services' },
         { name: 'Backend & Cloud APIs', href: '#services' },
       ],
     },
-    { name: 'Case Studies', href: '#case-studies' },
+    { name: 'Experience', href: '#experience' },
     { name: 'FAQ', href: '#faq' },
     { name: 'Contact', href: '#contact' },
   ];

@@ -25,7 +25,7 @@ export const ChatAssistant: React.FC<ChatAssistantProps> = ({
     {
       id: 'welcome',
       role: 'assistant',
-      content: `Hi there! 👋 I'm Sathiya's personal AI technical assistant.\n\nFeel free to ask me anything about his software engineering background, such as:\n- **Tech Stack:** His hands-on experience with Next.js, TypeScript, and Node.js\n- **Featured Projects:** Building Herbet Studio's multi-tenant SaaS and Menuval\n- **Work Experience:** What he built at Herbet Agency and Infinite Bull's Eye\n- **Availability:** 15 days notice period (currently serving notice)\n\n*(You can also click **Contact Sathiya** above to message his inbox directly via Resend!)*`,
+      content: `Hi there! 👋 I'm Sathiya's personal AI technical assistant.\n\nFeel free to ask me anything about his software engineering background, such as:\n- **Tech Stack:** His hands-on experience with Next.js, TypeScript, and Node.js\n- **Featured Projects:** Herbet Studio's SaaS, Menuval, Elantis AI USA, Aegis Security, Cloudmatos, Ruang Rama, and Hitman Live\n- **Work Experience:** What he built at Herbet Agency and Infinite Bull's Eye\n- **Availability:** 15 days notice period (currently serving notice)\n\n*(You can also click **Contact Sathiya** above to message his inbox directly via Resend!)*`,
       timestamp: Date.now(),
     },
   ]);
@@ -410,7 +410,7 @@ export const ChatAssistant: React.FC<ChatAssistantProps> = ({
                   >
                     <option value="Full-Stack Engineering Opportunity">Full-Stack / Next.js Engineering Role</option>
                     <option value="Multi-Tenant SaaS / Platform Project">Multi-Tenant SaaS / Platform Project</option>
-                    <option value="AI / Vector Search Integration">AI & Vector Search (pgvector, RAG) Integration</option>
+                    <option value="AI Agents & Workflows">AI Agents & Automatic Workflow Integration</option>
                     <option value="Contract / Freelance Development">Contract / Freelance Development</option>
                     <option value="Technical Consultation">Technical Consultation & General Inquiry</option>
                   </select>

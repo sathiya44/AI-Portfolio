@@ -147,8 +147,8 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               <div className="space-y-1 text-xs text-slate-700 dark:text-slate-300 print:text-black print:text-[9.5pt]">
                 <p><strong>Frontend & Next.js:</strong> Next.js (App Router, Server Actions, SSR/SSG/ISR), React.js, TypeScript, Tailwind CSS, ShadCN UI, TanStack Query, Redux.</p>
                 <p><strong>Backend & APIs:</strong> Node.js, NestJS, Express.js, REST APIs, GraphQL, Server-Side Validation, Role-Based Access Control (RBAC).</p>
-                <p><strong>Databases & Storage:</strong> PostgreSQL, Supabase, Prisma ORM, MongoDB, pgvector similarity search, SQL Query Tuning.</p>
-                <p><strong>AI Tools & Cloud:</strong> Vercel AI SDK, RAG, Cursor, Claude, ChatGPT, GitHub Actions CI/CD, Docker, Vercel.</p>
+                <p><strong>Databases & Storage:</strong> PostgreSQL, Supabase, Prisma ORM, MongoDB, SQL Query Tuning, Schema Design.</p>
+                <p><strong>AI Tools & Cloud:</strong> AI Agents & Automatic Workflows, Vercel AI SDK, Cursor, Claude, ChatGPT, GitHub Actions CI/CD, Docker, Vercel.</p>
               </div>
             </div>
 

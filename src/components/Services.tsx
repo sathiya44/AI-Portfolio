@@ -42,20 +42,20 @@ export const Services: React.FC<ServicesProps> = ({ onOpenChat }) => {
       prompt: 'How did Sathiya implement multi-tenant isolation in Herbet Studio?',
     },
     {
-      title: 'Production AI & Vector RAG',
-      badge: 'Vercel AI SDK + pgvector',
+      title: 'AI Agents & Automated Workflows',
+      badge: 'Vercel AI SDK + Agentic Tools',
       icon: Sparkles,
       color: 'text-emerald-600 dark:text-emerald-400',
       bgColor: 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-100 dark:border-emerald-900/50',
       description:
-        'Integrating context-grounded AI capabilities directly into web applications. Experienced in vector similarity embeddings, Retrieval-Augmented Generation (RAG) pipelines, and streaming chat interfaces.',
+        'Integrating intelligent AI capabilities and automatic workflows into web applications using AI agents. Experienced in tool-calling, autonomous multi-step pipelines, and streaming chat interfaces.',
       capabilities: [
-        'PostgreSQL pgvector similarity search (<200ms)',
+        'Automatic workflow orchestration using AI agents',
         'Vercel AI SDK streaming hooks & token control',
-        'Context-aware knowledge base synthesis',
+        'Multi-agent task pipelines & tool-calling',
         'Resilient client-side fallback architectures',
       ],
-      prompt: 'Explain Sathiya\'s experience with AI engineering and vector search using pgvector',
+      prompt: 'Explain Sathiya\'s experience with AI engineering and automated workflows using AI agents',
     },
     {
       title: 'Backend APIs & Cloud DevOps',

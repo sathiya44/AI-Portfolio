@@ -31,7 +31,7 @@ export const About: React.FC = () => {
               I am a <strong className="text-slate-900 dark:text-white">Full-Stack Engineer</strong> with approximately <strong className="text-slate-900 dark:text-white">4 years</strong> of professional experience designing, developing, and deploying production-ready web applications using modern web technologies including <strong className="text-blue-600 dark:text-blue-400">Next.js</strong>, <strong className="text-blue-600 dark:text-blue-400">React.js</strong>, <strong className="text-blue-600 dark:text-blue-400">TypeScript</strong>, <strong className="text-blue-600 dark:text-blue-400">Node.js</strong>, <strong className="text-blue-600 dark:text-blue-400">NestJS</strong>, <strong className="text-blue-600 dark:text-blue-400">PostgreSQL</strong>, and <strong className="text-blue-600 dark:text-blue-400">Supabase</strong>.
             </p>
             <p>
-              Throughout my engineering journey, I have owned features end-to-end—from requirements gathering and schema architecture through frontend interfaces, backend API integration, comprehensive testing, and CI/CD production deployment. I have built and maintained over 10 production web applications and internal business platforms, including multi-tenant SaaS tools and AI-driven knowledge retrieval workflows.
+              Throughout my engineering journey, I have owned features end-to-end—from requirements gathering and schema architecture through frontend interfaces, backend API integration, comprehensive testing, and CI/CD production deployment. I have built and maintained over 10 production web applications and internal business platforms, including multi-tenant SaaS tools and automatic workflows using AI agents.
             </p>
 
             {/* Core Architectural Pillars */}
@@ -59,10 +59,10 @@ export const About: React.FC = () => {
               <div className="p-4 rounded-xl bg-white dark:bg-[#0e1422] border border-slate-200/80 dark:border-slate-800 shadow-sm space-y-1.5">
                 <div className="flex items-center gap-2 text-slate-900 dark:text-white font-semibold text-sm">
                   <Cpu className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-                  <span>AI & Vector Search</span>
+                  <span>AI Agents & Workflows</span>
                 </div>
                 <p className="text-xs text-slate-500 dark:text-slate-400">
-                  Vercel AI SDK, pgvector similarity indexing, RAG retrieval pipelines, and streaming responses.
+                  Vercel AI SDK, automated agent pipelines, tool orchestration, and streaming responses.
                 </p>
               </div>
 

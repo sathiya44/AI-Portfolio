@@ -213,7 +213,7 @@ export const Contact: React.FC = () => {
                   >
                     <option value="Full-Stack Web App">Full-Stack Web Application (Next.js & TypeScript)</option>
                     <option value="Multi-Tenant SaaS">Multi-Tenant SaaS Architecture & Databases</option>
-                    <option value="AI Integration">AI Integration & Vector Search (pgvector, RAG)</option>
+                    <option value="AI Integration">AI Agents & Automatic Workflows</option>
                     <option value="Engineering Role">Full-Time / Contract Engineering Role Inquiry</option>
                     <option value="General Technical Consultation">General Technical Inquiry</option>
                   </select>

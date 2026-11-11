@@ -179,10 +179,10 @@ export const App: React.FC = () => {
           onOpenResumeModal={() => setIsResumeModalOpen(true)}
           onOpenChat={() => handleOpenChat()}
         />
+        <Projects onOpenChat={handleOpenChat} />
         <About />
         <Skills />
         <Services onOpenChat={handleOpenChat} />
-        <Projects onOpenChat={handleOpenChat} />
         <Experience />
         <FAQ onOpenChat={handleOpenChat} />
         <Contact />

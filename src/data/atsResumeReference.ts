@@ -11,14 +11,14 @@ LinkedIn: https://linkedin.com/in/sathiyasank | GitHub: https://github.com/sathi
 Location: Vellore, Tamil Nadu, India | Available in 15 Days (Serving Notice) | Remote
 
 Professional Summary:
-Full-Stack Engineer with approximately 4 years of professional experience designing, developing, and deploying production-ready web applications using Next.js, React.js, TypeScript, JavaScript (ES6+), Node.js, NestJS, PostgreSQL, and Supabase. Experienced in owning features end-to-end, from requirements and architecture through frontend development, backend API integration, database design, testing, and production deployment. Strong experience building multi-tenant SaaS platforms, internal business tools, workflow automation systems, and AI-powered applications. Uses AI-assisted and agentic coding tools including OpenAI Codex, Claude, ChatGPT, Cursor, and GitHub Copilot for implementation, debugging, refactoring, and development workflows. Hands-on experience with Vercel AI SDK, PostgreSQL pgvector, retrieval-augmented generation (RAG), REST APIs, GraphQL, and authentication. Comfortable working independently, solving ambiguous technical problems, and delivering maintainable, production-focused solutions.
+Full-Stack Engineer with approximately 4 years of professional experience designing, developing, and deploying production-ready web applications using Next.js, React.js, TypeScript, JavaScript (ES6+), Node.js, NestJS, PostgreSQL, and Supabase. Experienced in owning features end-to-end, from requirements and architecture through frontend development, backend API integration, database design, testing, and production deployment. Strong experience building multi-tenant SaaS platforms, internal business tools, workflow automation systems, and AI-powered applications. Uses AI-assisted and agentic coding tools including OpenAI Codex, Claude, ChatGPT, Cursor, and GitHub Copilot for implementation, debugging, refactoring, and development workflows. Hands-on experience with automatic workflows using AI agents, Vercel AI SDK, REST APIs, GraphQL, and authentication. Comfortable working independently, solving ambiguous technical problems, and delivering maintainable, production-focused solutions.
 
 Core Skills:
 - Frontend: Next.js, React.js, TypeScript, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS, ShadCN UI, Material UI
 - Next.js Deep Knowledge: App Router, Server Components, Client Components, Server Actions, Route Handlers, SSR, SSG, ISR, Dynamic Routing, Metadata API
 - Backend: Node.js, NestJS, Express.js, REST APIs, GraphQL, API Design, Server-Side Validation, Middleware
 - Databases: PostgreSQL, Supabase, Prisma ORM, MongoDB, MySQL, SQL Queries, Database Migrations, Schema Design
-- AI Engineering: Vercel AI SDK, LLM Integration, Retrieval-Augmented Generation (RAG), pgvector, Embeddings, AI-Powered Application Features
+- AI Engineering: AI Agents, Automatic Workflows, Vercel AI SDK, LLM Integration, Tool-Calling, AI-Powered Application Features
 - AI-Assisted Development: Cursor, Claude, ChatGPT, OpenAI Codex, GitHub Copilot, AI-Assisted Coding, Debugging, Code Generation and Refactoring
 - State Management: React Query (TanStack Query), Redux, Context API, React Hooks, Server State Management
 - Architecture & Security: Full-Stack Architecture, Component-Based Design, Modular Codebases, Multi-Tenant Applications, Supabase Auth, JWT, OAuth2, Role-Based Access Control (RBAC), Protected Routes, Tenant Isolation
@@ -35,7 +35,7 @@ Work Experience:
 - Developed backend functionality using NestJS, Node.js, PostgreSQL, Prisma ORM, and Supabase.
 - Implemented authentication and authorization using JWT, OAuth2, role-based permissions, and tenant-aware access control.
 - Built reusable frontend components, responsive dashboards, forms, data tables, and complex workflow interfaces using Tailwind CSS and ShadCN UI.
-- Integrated AI-powered features using Vercel AI SDK, PostgreSQL pgvector, and retrieval-based knowledge workflows.
+- Integrated AI-powered features and automated workflows using AI agents and Vercel AI SDK.
 - Developed workflow automation solutions using Google Apps Script, REST APIs, and backend services, reducing repetitive work by 20+ hours per month.
 - Improved application performance through optimized data fetching, caching, component refactoring, and database queries, achieving 40-60% faster page performance.
 - Used AI-assisted coding tools including Cursor, Codex, and Claude for implementation, debugging, and refactoring.

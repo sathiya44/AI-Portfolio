@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
 import { trackEvent } from '../lib/analytics';
 import { profileContext } from '../data/profileContext';
-import profileImg from '../assets/profile-card.jpg';
+import profileImg from '../assets/profile-card.webp';
 
 interface HeroProps {
   onOpenResumeModal: () => void;
@@ -32,16 +32,16 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal, onOpenChat }) => 
               <strong className="text-slate-900 dark:text-white font-semibold">Next.js & TypeScript</strong> (App Router, Server Actions), native{' '}
               <strong className="text-slate-900 dark:text-white font-semibold">multi-tenant SaaS platforms</strong>, high-performance{' '}
               <strong className="text-slate-900 dark:text-white font-semibold">Backend & APIs (Node.js, PostgreSQL, Supabase)</strong>, and{' '}
-              <strong className="text-slate-900 dark:text-white font-semibold">Production AI & Vector RAG (Vercel AI SDK, pgvector)</strong>. Delivering scalable web apps, startup MVPs, and production systems.
+              <strong className="text-slate-900 dark:text-white font-semibold">automatic workflows using AI agents</strong>. Delivering scalable web apps, startup MVPs, and production systems.
             </p>
 
             {/* Action Buttons Row matching screenshot */}
             <div className="pt-2 flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-3">
               <a
-                href="#case-studies"
+                href="#projects"
                 className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-700 active:scale-[0.98] text-white font-medium text-sm transition-all shadow-sm shadow-blue-500/20"
               >
-                <span>Explore Case Studies</span>
+                <span>Explore Projects</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
 
@@ -94,7 +94,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal, onOpenChat }) => 
                       alt="Sathiya Sankar"
                       width={128}
                       height={128}
-                      className="w-full h-full object-cover object-center select-none"
+                      className="w-full h-full object-cover object-top select-none"
                       loading="eager"
                       fetchPriority="high"
                     />
@@ -113,7 +113,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal, onOpenChat }) => 
 
                 {/* Domain breadcrumb line */}
                 <p className="text-xs text-slate-600 dark:text-slate-400 mt-1 font-medium">
-                  Full-Stack • Web • AI / RAG
+                  Full-Stack • Web • AI
                 </p>
 
                 {/* Social Icon Buttons Row matching screenshot */}
@@ -188,7 +188,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal, onOpenChat }) => 
               &lt;200<span className="text-blue-600 dark:text-blue-400 font-bold">ms</span>
             </div>
             <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 font-medium">
-              pgvector RAG Retrieval
+              AI Workflow Execution
             </p>
           </div>
         </div>
